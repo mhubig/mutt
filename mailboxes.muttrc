@@ -1,0 +1,13 @@
+mailboxes "+INBOX"
+mailboxes "+[Gmail]/Sent"
+mailboxes "+[Gmail]/Trash"
+mailboxes "+[Gmail]/Drafts"
+mailboxes "+[Gmail]/Starred"
+mailboxes "+[Gmail]/Important"
+mailboxes "+[Gmail]/All Mail"
+mailboxes "+Mailinglists"
+mailboxes "+Mailinglists/Das U-Boot"
+mailboxes "+Mailinglists/PySide"
+mailboxes "+Mailinglists/Yocto Project"
+
+# vim: ft=muttrc

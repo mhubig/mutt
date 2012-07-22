@@ -1,0 +1,13 @@
+# subscribed mailing lists
+subscribe u-boot@lists.denx.de
+subscribe pyside@qt-project.org
+subscribe yocto@yoctoproject.org
+
+# mailinglists i'm not subscribed
+lists twisted-python@twistedmatrix.com
+lists gluster-devel@nongnu.org
+lists python-win32@python.org
+lists sensorml@lists.opengeospatial.org
+lists yaml-core@lists.sourceforge.net
+
+# vim: ft=muttrc
