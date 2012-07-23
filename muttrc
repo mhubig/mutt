@@ -54,7 +54,6 @@ set forward_quote                                       # include message in for
 # sidebar settings
 set sidebar_visible     = no                            # start without sidebar
 set sidebar_width       = 30                            # width of sidebar
-set sidebar_sort        = no                            # don't sort alpha
 set sidebar_delim       = '|'                           # sidebar delimiter
 
 # headers to show
