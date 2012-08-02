@@ -16,6 +16,7 @@ set mbox                = "+[Gmail]/All Mail"
 set header_cache        = "~/.mutt/cache/headers"
 set message_cachedir    = "~/.mutt/cache/bodies"
 set certificate_file    = "~/.mutt/certificates"
+set alias_file          = "~/.mutt/aliases.muttrc"
 
 # helper apps
 set editor              = "/usr/bin/vim"
@@ -29,6 +30,7 @@ unset confirmappend                                     # don't ask, just do!
 set delete              = yes                           # don't ask, just do!
 set quit                = yes                           # don't ask, just do!
 set mail_check          = 30                            # check every 30 sec
+set sort_alias          = alias                         # sort by alias
 
 # index options
 set sort                = threads                       # like gmail 
@@ -110,6 +112,9 @@ source ~/.mutt/mailboxes.muttrc
 
 # my mailing lists
 source ~/.mutt/mailinglists.muttrc
+
+# my alias file
+source $alias_file
 
 # the solarized color scheme
 source ~/.mutt/solarized-light-16.muttrc
