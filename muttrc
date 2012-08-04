@@ -36,6 +36,7 @@ set sort_alias          = alias                         # sort by alias
 set sort                = threads                       # like gmail 
 set sort_aux            = reverse-last-date-received    # like gmail
 set sort_re                                             # thread based on reply_regexp
+unset collapse_unread                                   # don't collaps unread threads
 
 # pager
 set pager_index_lines   = 8                             # show 8 messages when in pager
@@ -102,6 +103,12 @@ macro browser <left>    <home><return> "Goto previous folder"
 
 # editor keybindings
 bind editor <space> noop
+
+# send-hooks
+send-hook . 'my_hdr Message-ID:<`date +"%Y%m%d%H%M%S"`.`uuidgen`.mhubig@imko.de>'
+
+# folder-hooks
+folder-hook . "push '<collapse-all>'"
 
 # my personal details and credentials
 source ~/.mutt/credentials.muttrc

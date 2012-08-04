@@ -80,10 +80,15 @@ color index         green           white           "~N~v~(~F~N)"               
 color index         green           white           "~N~v~(~F)"                 # collapsed thread with unread parent, no unread inside, but some flagged
 color index         cyan            white           "~v~(~p)"                   # collapsed thread with unread parent, no unread inside, some to me directly
 color index         yellow          red             "~v~(~D)"                   # thread with deleted (doesn't differentiate between all or partial)
-#color index         yellow          default         "~(~N)"                    # messages in threads with some unread
-#color index         green           default         "~S"                       # superseded messages
-#color index         red             default         "~T"                       # tagged messages
-#color index         brightred       red             "~="                       # duplicated messages
+#color index	    yellow          default         "~(~N)"                    # messages in threads with some unread
+#color index        green           default         "~S"                       # superseded messages
+#color index        red             default         "~T"                       # tagged messages
+#color index        brightred       red             "~="                       # duplicated messages
+
+# Spezial color settings for mailinglists (~l)
+color	index   green	default		"~l~x .*(mhubig)?@(imko.de)"
+color	index	cyan	default		"~l~P"
+color	index	red	default		"~l~F"
 
 # message headers ------------------------------------------------------
 
