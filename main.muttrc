@@ -2,9 +2,6 @@
 ## mutt configuration file 
 ##
 
-# Set the base directory
-set my_dir = '~/.mutt-gmail'
-
 # IMAP Settings
 set imap_check_subscribed = no
 set imap_keepalive      = 900
