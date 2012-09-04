@@ -2,6 +2,9 @@
 ## mutt configuration file 
 ##
 
+# Set the base directory
+set my_dir = '~/.mutt-gmail'
+
 # IMAP Settings
 set imap_check_subscribed = no
 set imap_keepalive      = 900
@@ -13,10 +16,10 @@ set postponed           = "+[Gmail]/Drafts"
 set mbox                = "+[Gmail]/All Mail"
 
 # where to put the stuff
-set header_cache        = "~/.mutt/cache/headers"
-set message_cachedir    = "~/.mutt/cache/bodies"
-set certificate_file    = "~/.mutt/certificates"
-set alias_file          = "~/.mutt/aliases.muttrc"
+set header_cache        = "$my_dir/cache/headers"
+set message_cachedir    = "$my_dir/cache/bodies"
+set certificate_file    = "$my_dir/certificates"
+set alias_file          = "$my_dir/aliases.muttrc"
 
 # helper apps
 set editor              = "/usr/bin/vim"
@@ -111,18 +114,18 @@ send-hook . 'my_hdr Message-ID:<`date +"%Y%m%d%H%M%S"`.`uuidgen`.mhubig@imko.de>
 folder-hook . "push '<collapse-all>'"
 
 # my personal details and credentials
-source ~/.mutt/credentials.muttrc
+source "$my_dir/credentials.muttrc"
 
 # my mailboxes
-source ~/.mutt/mailboxes.muttrc
+source "$my_dir/mailboxes.muttrc"
 
 # my mailing lists
-source ~/.mutt/mailinglists.muttrc
+source "$my_dir/mailinglists.muttrc"
 
 # my alias file
 source $alias_file
 
 # the solarized color scheme
-source ~/.mutt/solarized-light-16.muttrc
+source "$my_dir/solarized-light-16.muttrc"
 
 # vim: ft=muttrc
