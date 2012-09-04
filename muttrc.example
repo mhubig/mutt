@@ -1,0 +1,7 @@
+# Set the base directory
+set my_dir = '~/.mutt-gmail'
+
+# and source the real muttrc
+source "$my_dir/main.muttrc"
+
+# vim: ft=muttrc
