@@ -2,6 +2,7 @@
 subscribe u-boot@lists.denx.de
 subscribe pyside@qt-project.org
 subscribe yocto@yoctoproject.org
+subscribe users@lists.opennebula.org
 
 # mailinglists i'm not subscribed
 lists twisted-python@twistedmatrix.com
