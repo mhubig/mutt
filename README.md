@@ -16,7 +16,7 @@ Use at your own risk.
    On Mac OS X with [*Homebrew*](http://mxcl.github.com/homebrew/):
    
    ```
-   $ brew install mutt --sidebar-patch
+   $ brew install mutt --with-sidebar-patch
    ```
 
 2. Clone this repository.
